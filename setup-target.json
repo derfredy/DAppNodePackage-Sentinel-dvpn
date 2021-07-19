@@ -1,0 +1,30 @@
+{
+  "MNEMONIC": {
+    "type": "environment",
+    "name": "MNEMONIC"
+  },
+  "password": {
+    "type": "environment",
+    "name": "PASSWORD"
+  },
+  "PRICE": {
+    "type": "environment",
+    "name": "PRICE"
+  },
+  "REMOTE_URL": {
+    "type": "environment",
+    "name": "REMOTE_URL"
+  },
+  "MONIKER": {
+    "type": "environment",
+    "name": "MONIKER"
+  },
+  "DESC": {
+    "type": "environment",
+    "name": "DESC"
+  },
+  "option": {
+    "type": "environment",
+    "name": "option"
+  }
+}

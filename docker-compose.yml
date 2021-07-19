@@ -1,0 +1,23 @@
+version: "3.4"
+services:
+  sentinel-dvpn.public.dappnode.eth:
+    build: ./build
+    image: "sentinel-dvpn.public.dappnode.eth:0.1.0"
+    restart: unless-stopped
+    privileged: true
+    volumes:
+      - "sentinelnode:/root/.sentinelnode"
+      - "/lib/modules:/lib/modules:ro"
+    ports:
+      - "8585:8585/tcp"
+      - "19192:19192/udp"
+    environment:
+      - MNEMONIC=
+      - PASSWORD=DAppNode
+      - PRICE=3000
+      - REMOTE_URL=
+      - MONIKER=DAppNode
+      - DESC=DAppNode
+      - option=
+volumes:
+  sentinelnode: {}

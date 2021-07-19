@@ -1,0 +1,55 @@
+{
+  "description": "# Setting up Sentinel dVPN:\n\nThis wizard will help you setup your dVPN node by following the next steps.\n\n## Warning:\n\nThis package will need to start a privileged container in order to add and configure a tun0 p2p interface in your DAppNode. That will let you share part of your bandwith and generate incomes. For that reason, next step will warn you about the risks of installing a privileged package in your system. We have not found a different way of doing that. So please, be sure you understand what you are doing. Basically, accepting the risk, you are trusting the package developer (@derfredy:matrix.org) and the Sentinel core team\n\n",
+  "type": "object",
+  "properties": {
+    "password": {
+      "type": "string",
+      "title": "Password",
+      "description": "Please enter a password for importing your wallet:"
+    },
+    "MNEMONIC": {
+      "type": "string",
+      "title": "Mnemonic",
+      "description": "Enter the 24 secret words of your wallet: ",
+      "default": ""
+    },   
+    "PRICE": {
+      "type": "string",
+      "title": "Price",
+      "description": "Enter how many udvpn you cost per GB: ",
+      "default": "3000"
+    },
+    "REMOTE_URL": {
+      "type": "string",
+      "title": "Remote URL",
+      "description": "Enter the public IP or DNS of your node: ",
+      "default": ""
+    },
+    "MONIKER": {
+      "type": "string",
+      "title": "Moniker",
+      "description": "Enter node moniker: ",
+      "default": "DAppNode"
+    },
+    "DESC": {
+      "type": "string",
+      "title": "Description",
+      "description": "Enter a description of your node: ",
+      "default": "DAppNode"
+    },
+    "option": {
+      "type": "string",
+      "title": "option",
+      "description": "Did you read the Warning at top of this page? Y/N : ",
+      "default": "Y"
+    }
+  },
+  "required": [
+    "password",
+    "MNEMONIC",
+    "PRICE",
+    "MONIKER",
+    "DESC",
+    "option"
+  ]
+}
