@@ -1,6 +1,10 @@
 
 # Sentinel DVPN
 
+![image](https://user-images.githubusercontent.com/23276270/126507793-b97ff84c-e7f4-4edc-9d13-1e1f348d6305.png)
+
+This is a DAppNode Package that deploys a Sentinel DVPN exit node. It will allow you to share your bandwith and earn $DVPN tokens.
+
 ## Warning
 
 This is a special DAppNode Package. It needs some apt packages to be installed in the host before you can use this software.
