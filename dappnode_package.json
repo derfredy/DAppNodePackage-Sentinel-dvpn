@@ -1,13 +1,13 @@
 {
   "name": "sentinel-dvpn.public.dappnode.eth",
   "version": "0.1.0",
-  "upstreamVersion": "v0.1.4",
+  "upstreamVersion": "v0.2.0",
   "shortDescription": "Sentinel dVPN node",
   "description": "Sentinel dVPN node",
   "type": "service",
   "keywords": [
     "DAppNode",
-    "VPN",
+    "DVPN",
     "Sentinel",
     "Tendermint"
   ],
@@ -19,7 +19,8 @@
     "Blockchain"
   ],
   "links": {
-    "homepage": "https://sentinel.co"
+    "homepage": "https://sentinel.co",
+    "Package Code": "https://github.com/derfredy/DAppNodePackage-Sentinel-dvpn"
   },
   "repository": {
     "type": "git",

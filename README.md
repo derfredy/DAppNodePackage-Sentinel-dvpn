@@ -49,5 +49,8 @@ Port | Protocol
 
 Connect to your DAppNode and then you can use this direct link to install it:                                                                                                
 
-[Install Sentinel DVPN node Package](http://my.dappnode/#/installer/%2Fipfs%2FQmdTSeGEoWv7cWZofZd412HeFmEUJyBDMXSKEW82AmvFyM)
+[Install Sentinel DVPN node Package](http://my.dappnode/#/installer/%2Fipfs%2FQmSsLaT3d5HjpbtKJ58grmM7DsWpPf2JRw13P2Xx1k9P2W)
 
+Or paste this IPFS hash into your DAppNode search bar:
+
+/ipfs/QmSsLaT3d5HjpbtKJ58grmM7DsWpPf2JRw13P2Xx1k9P2W

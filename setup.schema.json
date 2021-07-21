@@ -23,7 +23,7 @@
     "REMOTE_URL": {
       "type": "string",
       "title": "Remote URL",
-      "description": "Enter the public IP or DNS of your node: ",
+      "description": "Enter the public IP or DNS of your node. If empty it will try to find it automatically: ",
       "default": ""
     },
     "MONIKER": {

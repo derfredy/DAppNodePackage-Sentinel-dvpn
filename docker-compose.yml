@@ -16,7 +16,7 @@ services:
       - PASSWORD=DAppNode
       - PRICE=30000
       - REMOTE_URL=
-      - MONIKER=DAppNode
+      - MONIKER=DAppNode.io
       - OPTION=
 volumes:
   sentinelnode: {}
