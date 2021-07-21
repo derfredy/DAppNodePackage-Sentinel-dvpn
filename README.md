@@ -38,5 +38,16 @@ Once the wireguard package and modules are installed you can proceed with the in
 
 ## Ports
 
-If you are behind a restrictive firewall, please forward tcp/8585 and udp/19192 ports to your DAppNode LAN IP.
+If you are behind a restrictive firewall, please forward the following ports to your DAppNode LAN IP.
+
+Port | Protocol
+--- | ---
+8585 | tcp
+19192 | udp
+
+## Install
+
+Connect to your DAppNode and then you can use this direct link to install it:                                                                                                
+
+[Install Sentinel DVPN node Package](http://my.dappnode/#/installer/%2Fipfs%2FQmdTSeGEoWv7cWZofZd412HeFmEUJyBDMXSKEW82AmvFyM)
 
