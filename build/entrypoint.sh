@@ -9,13 +9,16 @@ fi
 
 # Set the current remote URL or IP
 if [ "$REMOTE_URL" == "" ]; then
-    sed -i 's/remote_url = ""/remote_url = "https\:\/\/'$(curl --silent ifconfig.me)'\:8585"/' config.toml
+    sed -i 's/^remote_url =.*/remote_url = "https\:\/\/'$(curl --silent ifconfig.me)'\:8585"/' config.toml
 else
-    sed -i 's/remote_url = ""/remote_url = "https\:\/\/'$REMOTE_URL'\:8585"/' config.toml
+    sed -i 's/^remote_url =.*/remote_url = "https\:\/\/'$REMOTE_URL'\:8585"/' config.toml
 fi
 
 # Set the price
-sed -i 's/price = ""/price = "'${PRICE}'udvpn"/' config.toml
+sed -i 's/^price =.*/price = "'${PRICE}'udvpn"/' config.toml
+
+# Set the moniker
+sed -i "s/^moniker =.*/moniker = \"$MONIKER\"/" config.toml
 
 # Init wireguard
 process wireguard config init
@@ -40,15 +43,15 @@ if [ ! -f "${HOME}/.sentinelnode/tls.crt" ] || [ ! -f "${HOME}/.sentinelnode/tls
         -sha256 \
         -days 365 \
         -nodes \
-	    -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com" \
+	      -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com" \
         -out ${HOME}/.sentinelnode/tls.crt \
         -keyout ${HOME}/.sentinelnode/tls.key
 fi
 
 sysctl -w net.ipv4.ip_forward=1 || echo "Failed to enable v4 forwarding"
-sysctl -w net.ipv6.conf.all.disable_ipv6=0 || echo "Failed to enable IPv6 Forwarding default"
+sysctl -w net.ipv6.conf.all.disable_ipv6=0 || echo "Failed to enable IPv6"
 sysctl -w net.ipv6.conf.all.forwarding=1 || echo "Failed to enable IPv6 Forwarding"
-sysctl -w net.ipv6.conf.default.forwarding=1 || echo "Failed to enable default Forwarding"
+sysctl -w net.ipv6.conf.default.forwarding=1 || echo "Failed to enable IPv6 default Forwarding"
 
 (
   echo "$PASSWORD"

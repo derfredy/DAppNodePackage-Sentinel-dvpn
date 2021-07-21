@@ -26,5 +26,5 @@ ip6_udp_tunnel         16384  1 wireguard
 udp_tunnel             16384  1 wireguard
 ```
 
-Once the wireguard modules are installed you can proceed with the instalation of Sentine DVPN as usually.
+Once the wireguard package and modules are installed you can proceed with the instalation of Sentine DVPN as usually.
 

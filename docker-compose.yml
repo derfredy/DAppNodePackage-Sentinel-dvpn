@@ -14,10 +14,9 @@ services:
     environment:
       - MNEMONIC=
       - PASSWORD=DAppNode
-      - PRICE=3000
+      - PRICE=30000
       - REMOTE_URL=
       - MONIKER=DAppNode
-      - DESC=DAppNode
-      - option=
+      - OPTION=
 volumes:
   sentinelnode: {}

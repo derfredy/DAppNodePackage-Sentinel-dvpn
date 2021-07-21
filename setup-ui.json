@@ -1,5 +1,5 @@
 {
-  "password": {
+  "PASSWORD": {
     "ui:widget": "password"
   },
   "MNEMONIC": {

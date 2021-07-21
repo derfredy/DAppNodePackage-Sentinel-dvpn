@@ -3,7 +3,7 @@
     "type": "environment",
     "name": "MNEMONIC"
   },
-  "password": {
+  "PASSWORD": {
     "type": "environment",
     "name": "PASSWORD"
   },
@@ -19,11 +19,7 @@
     "type": "environment",
     "name": "MONIKER"
   },
-  "DESC": {
-    "type": "environment",
-    "name": "DESC"
-  },
-  "option": {
+  "OPTION": {
     "type": "environment",
     "name": "option"
   }

@@ -45,7 +45,7 @@ interval_update_status = "55m0s"
 listen_on = "0.0.0.0:8585"
 
 # Name of the node
-moniker = "DAppNode DVPN"
+moniker = "DAppNode"
 
 # Per Gigabyte price to charge against the provided bandwidth
 price = ""
