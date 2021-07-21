@@ -28,3 +28,5 @@ udp_tunnel             16384  1 wireguard
 
 Once the wireguard package and modules are installed you can proceed with the instalation of Sentine DVPN as usually.
 
+If you are behind a restrictive firewall, please forward tcp/8585 and udp/19192 ports to your DAppNode LAN IP.
+
